@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="button" value="Display image" onclick="displayImage()">
+    </div>
+    <img id="ranImage"></img>
+    <script type="text/javascript">
+        function displayImage () {
+        var images = ["https://images.unsplash.com/photo-1516125073169-9e3ecdee83e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", 
+        "https://images.unsplash.com/photo-1545315171-cc80c905c252?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", 
+        "https://images.unsplash.com/photo-1490481920145-fc78891bbb99?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"];
+        document.getElementById('ranImage').src = images[Math.floor(Math.random()*images.length)];
+        }
+    </script>
+</body>
+</html>
